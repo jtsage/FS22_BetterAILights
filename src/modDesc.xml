@@ -10,7 +10,7 @@
 <en><![CDATA[Turns on helper lights during rain and snow]]></en>
 <de><![CDATA[Schaltet die Hilfslichter bei Regen und Schnee ein]]></de>
 	</description>
-	<iconFilename>icon.dds</iconFilename>
+	<iconFilename>modIcon.dds</iconFilename>
 	<multiplayer supported="true"/>
 	<extraSourceFiles>
 		<sourceFile filename="aiBetterLights.lua" />
