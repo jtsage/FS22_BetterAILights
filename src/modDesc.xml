@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="63">
+	<title>
+		<en>Better AI Lights</en>
+		<de>Bessere AI-Lichter</de>
+	</title>
+	<author>JTSage</author>
+	<version>1.0.0.0</version>
+	<description>
+<en><![CDATA[Turns on helper lights during rain and snow]]></en>
+<de><![CDATA[Schaltet die Hilfslichter bei Regen und Schnee ein]]></de>
+	</description>
+	<iconFilename>icon.dds</iconFilename>
+	<multiplayer supported="true"/>
+	<extraSourceFiles>
+		<sourceFile filename="aiBetterLights.lua" />
+	</extraSourceFiles>
+</modDesc>
