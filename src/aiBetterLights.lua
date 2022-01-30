@@ -6,9 +6,9 @@ aiBetterLights = {};
 
 function aiBetterLights:updateAILights(isWorking)
 	local spec            = self.spec_lights
-	local cloudUpdaterVal = g_currentMission.environment.weather.cloudUpdater:getCurrentValues()
+	-- local cloudUpdaterVal = g_currentMission.environment.weather.cloudUpdater:getCurrentValues()
 	-- I'm not convinced on the cloudy lights yet.
-	local isCloudy        = ( cloudUpdaterVal.lightDamping > 0.19 )
+	-- local isCloudy        = ( cloudUpdaterVal.lightDamping > 0.19 )
 
 	local isCombine     = ( self.spec_combine ~= nil )
 	local hasPipe       = ( self.spec_pipe ~= nil)
@@ -20,7 +20,7 @@ function aiBetterLights:updateAILights(isWorking)
 		hasLightType4 = ( self.spec_lights.maxLightState >= 4 )
 	end
 
-	if not g_currentMission.environment.isSunOn or g_currentMission.environment.weather:getIsRaining() or isCloudy then
+	if not g_currentMission.environment.isSunOn or g_currentMission.environment.weather:getIsRaining() then
 		local typeMask = spec.aiLightsTypesMask
 
 		if isWorking then

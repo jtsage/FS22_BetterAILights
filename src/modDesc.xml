@@ -7,8 +7,8 @@
 	<author>JTSage</author>
 	<version>1.0.0.0</version>
 	<description>
-<en><![CDATA[Turns on helper lights during rain, snow, or very cloudy days.  Also turns on the pipe light of combines when they are out.]]></en>
-<de><![CDATA[Schaltet das Hilfslicht bei Regen, Schnee oder starker Bewölkung ein. Schaltet auch das Licht der Mähdrescherrohre ein, wenn diese aus sind.]]></de>
+<en><![CDATA[Turns on helper lights during rain and snow.  Also turns on the pipe light of combines when they are out.]]></en>
+<de><![CDATA[Schaltet die Helferbeleuchtung bei Regen und Schnee ein.  Schaltet auch die Rohrbeleuchtung von Mähdreschern ein, wenn diese ausgefallen sind.]]></de>
 	</description>
 	<iconFilename>modIcon.dds</iconFilename>
 	<multiplayer supported="true"/>
