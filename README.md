@@ -5,3 +5,7 @@
 </p>
 
 Turns on AI lights when it's raining or snowing too.
+
+## Limitations
+
+- AutoDrive sets it's own lights, this won't do anything for it.
