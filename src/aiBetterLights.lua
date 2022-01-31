@@ -4,7 +4,7 @@
 
 AIBetterLights = {};
 
-function AIBetterLights:updateAILights(isWorking)
+function AIBetterLights:updateAILights(superFunc, isWorking)
 	local spec          = self.spec_lights
 
 	local isCombine     = ( self.spec_combine ~= nil )
@@ -19,6 +19,11 @@ function AIBetterLights:updateAILights(isWorking)
 
 	if not g_currentMission.environment.isSunOn or g_currentMission.environment.weather:getIsRaining() then
 		local typeMask = spec.aiLightsTypesMask
+
+		-- Check to see if we are on a field.  This may be nessesary for courseplay.
+		-- if self.getIsOnField ~= nil and self:getIsOnField() then
+		-- 	typeMask = spec.aiLightsTypesMaskWork
+		-- end
 
 		if isWorking then
 			typeMask = spec.aiLightsTypesMaskWork
