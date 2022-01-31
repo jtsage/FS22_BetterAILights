@@ -2,13 +2,10 @@
 -- @Author: JTSage ---------------------------------------------------------
 ----------------------------------------------------------------------------
 
-aiBetterLights = {};
+AIBetterLights = {};
 
-function aiBetterLights:updateAILights(isWorking)
-	local spec            = self.spec_lights
-	-- local cloudUpdaterVal = g_currentMission.environment.weather.cloudUpdater:getCurrentValues()
-	-- I'm not convinced on the cloudy lights yet.
-	-- local isCloudy        = ( cloudUpdaterVal.lightDamping > 0.19 )
+function AIBetterLights:updateAILights(isWorking)
+	local spec          = self.spec_lights
 
 	local isCombine     = ( self.spec_combine ~= nil )
 	local hasPipe       = ( self.spec_pipe ~= nil)
@@ -43,4 +40,4 @@ function aiBetterLights:updateAILights(isWorking)
 	end
 end
 
-Lights.updateAILights = Utils.overwrittenFunction(Lights.updateAILights, aiBetterLights.updateAILights);
+Lights.updateAILights = Utils.overwrittenFunction(Lights.updateAILights, AIBetterLights.updateAILights);

@@ -41,6 +41,7 @@
 		"setXMLInt",
 		"getUserProfileAppPath",
 		"g_gui",
-		"Lights"
+		"Lights",
+		"bitOR"
 	]
 }
